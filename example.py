@@ -14,11 +14,11 @@ def generate_bangla_pdf():
     pdf.set_text_shaping(True)  # Magic line!
     
     pdf.set_font_size(16)
-    pdf.multi_cell(0, 10, "বাংলা PDF টেস্ট")
+    pdf.multi_cell(100, 10, "বাংলা PDF টেস্ট")
     
     pdf.set_font_size(12)
-    pdf.multi_cell(0, 8, "যুক্তাক্ষর সঠিকভাবে আসছে: বাংলাদেশ, প্রযুক্তি, স্বাধীনতা")
-    pdf.multi_cell(0, 8, "আরো কিছু টেক্সট: বিশ্ববিদ্যালয়, পরিবেশ, অর্থনীতি")
+    pdf.multi_cell(100, 8, "যুক্তাক্ষর সঠিকভাবে আসছে: বাংলাদেশ, প্রযুক্তি, স্বাধীনতা")
+    pdf.multi_cell(100, 8, "আরো কিছু টেক্সট: বিশ্ববিদ্যালয়, পরিবেশ, অর্থনীতি")
     
     pdf.output("bangla_output.pdf")
     print("✅ PDF generated successfully!")
